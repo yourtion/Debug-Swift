@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB3817AB1C27B9F000A302BB /* SDColorLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3817AA1C27B9F000A302BB /* SDColorLog.swift */; };
 		CBA6FEF31C2529E4001A476B /* SDebug.h in Headers */ = {isa = PBXBuildFile; fileRef = CBA6FEF21C2529E4001A476B /* SDebug.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB3817AA1C27B9F000A302BB /* SDColorLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDColorLog.swift; sourceTree = "<group>"; };
 		CBA6FEEF1C2529E4001A476B /* SDebug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDebug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBA6FEF21C2529E4001A476B /* SDebug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDebug.h; sourceTree = "<group>"; };
 		CBA6FEF41C2529E4001A476B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,6 +50,7 @@
 			children = (
 				CBA6FEF21C2529E4001A476B /* SDebug.h */,
 				CBA6FEF41C2529E4001A476B /* Info.plist */,
+				CB3817AA1C27B9F000A302BB /* SDColorLog.swift */,
 			);
 			path = SDebug;
 			sourceTree = "<group>";
@@ -130,6 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB3817AB1C27B9F000A302BB /* SDColorLog.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +232,7 @@
 		CBA6FEF81C2529E4001A476B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -238,12 +243,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourtion.SDebug;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		CBA6FEF91C2529E4001A476B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -276,6 +283,7 @@
 				CBA6FEF91C2529E4001A476B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
